@@ -1,0 +1,15 @@
+# Gradle
+.gradle
+build/
+
+# IntelliJ
+out/
+*.iml
+*.patch
+.idea/*
+!.idea/codeStyles
+!.idea/inspectionProfiles
+!.idea/runConfigurations
+
+.java-version
+.DS_Store
