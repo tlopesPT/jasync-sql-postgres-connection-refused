@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'com.tlopes'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    testImplementation 'com.github.jasync-sql:jasync-postgresql:2.1.24'
+    testImplementation 'org.testcontainers:junit-jupiter:1.18.0'
+    testImplementation 'org.testcontainers:postgresql:1.18.0'
+    testImplementation 'org.postgresql:postgresql:42.6.0'
+    testImplementation 'org.awaitility:awaitility:4.2.0'
+
+}
+
+test {
+    useJUnitPlatform()
+}
